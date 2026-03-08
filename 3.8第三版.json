@@ -8465,6 +8465,17 @@
               "name": "Player2"
             }
           ]
+        },
+        {
+          "name": "AllEnemies",
+          "objects": [
+            {
+              "name": "Enemy"
+            },
+            {
+              "name": "BOSS1"
+            }
+          ]
         }
       ],
       "variables": [
@@ -18427,7 +18438,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18463,7 +18474,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18499,7 +18510,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18535,7 +18546,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18584,7 +18595,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18620,7 +18631,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18656,7 +18667,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18692,7 +18703,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18728,7 +18739,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18764,7 +18775,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18800,7 +18811,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18836,7 +18847,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18872,7 +18883,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18921,7 +18932,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18957,7 +18968,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -18993,7 +19004,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -19029,7 +19040,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -19078,7 +19089,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -19114,7 +19125,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -19163,7 +19174,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -19212,7 +19223,7 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 71,
                         "y": 59.5
@@ -37201,7 +37212,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "1"
                                   ]
@@ -37212,7 +37223,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -37224,7 +37235,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Dead1\""
@@ -37237,7 +37248,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "False",
                                     ""
@@ -37276,7 +37287,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<=",
                                     "1"
                                   ]
@@ -37347,7 +37358,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "1"
                                   ]
@@ -37358,7 +37369,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -37370,7 +37381,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Dead1\""
@@ -37383,7 +37394,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "False",
                                     ""
@@ -37410,7 +37421,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<=",
                                     "1"
                                   ]
@@ -37494,7 +37505,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "1"
                                   ]
@@ -37505,7 +37516,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Punch\""
@@ -37518,7 +37529,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastEnemyThatAttackedThePlayer",
                                     "False",
                                     ""
@@ -37545,7 +37556,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<=",
                                     "1"
                                   ]
@@ -37604,7 +37615,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "1"
                                   ]
@@ -37615,7 +37626,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Punch\""
@@ -37628,7 +37639,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastEnemyThatAttackedThePlayer2",
                                     "False",
                                     ""
@@ -37655,7 +37666,7 @@
                                   },
                                   "parameters": [
                                     "",
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<=",
                                     "1"
                                   ]
@@ -37783,7 +37794,7 @@
                               },
                               "parameters": [
                                 "Player1",
-                                "Enemy",
+                                "AllEnemies",
                                 "40",
                                 ""
                               ]
@@ -37795,7 +37806,7 @@
                               "parameters": [
                                 "Player1",
                                 ">",
-                                "Enemy.Y()-7"
+                                "AllEnemies.Y()-7"
                               ]
                             },
                             {
@@ -37805,7 +37816,7 @@
                               "parameters": [
                                 "Player1",
                                 "<",
-                                "Enemy.BoundingBoxBottom()-55"
+                                "AllEnemies.BoundingBoxBottom()-55"
                               ]
                             },
                             {
@@ -37813,7 +37824,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Knockdown",
                                 "=",
                                 ""
@@ -37824,7 +37835,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "CantTakeDamage",
                                 "=",
                                 ""
@@ -37836,7 +37847,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead1\""
@@ -37848,7 +37859,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead2\""
@@ -37887,7 +37898,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "Player1.CenterX()"
                                   ]
@@ -37899,7 +37910,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -37910,7 +37921,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -37920,7 +37931,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -37931,7 +37942,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -37949,8 +37960,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -37961,7 +37972,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -37969,7 +37980,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -37980,7 +37991,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -37991,7 +38002,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -38000,7 +38011,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "True",
                                     ""
@@ -38032,7 +38043,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -38043,7 +38054,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer1",
                                     "True",
                                     ""
@@ -38092,7 +38103,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<",
                                     "Player1.CenterX()"
                                   ]
@@ -38104,7 +38115,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -38115,7 +38126,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -38125,7 +38136,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -38136,7 +38147,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -38154,8 +38165,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -38166,7 +38177,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -38174,7 +38185,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -38185,7 +38196,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -38196,7 +38207,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -38205,7 +38216,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "True",
                                     ""
@@ -38237,7 +38248,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -38248,7 +38259,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer1",
                                     "True",
                                     ""
@@ -38373,7 +38384,7 @@
                               },
                               "parameters": [
                                 "Player2",
-                                "Enemy",
+                                "AllEnemies",
                                 "40",
                                 ""
                               ]
@@ -38385,7 +38396,7 @@
                               "parameters": [
                                 "Player2",
                                 ">",
-                                "Enemy.Y()-7"
+                                "AllEnemies.Y()-7"
                               ]
                             },
                             {
@@ -38395,7 +38406,7 @@
                               "parameters": [
                                 "Player2",
                                 "<",
-                                "Enemy.BoundingBoxBottom()-55"
+                                "AllEnemies.BoundingBoxBottom()-55"
                               ]
                             },
                             {
@@ -38403,7 +38414,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Knockdown",
                                 "=",
                                 ""
@@ -38414,7 +38425,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "CantTakeDamage",
                                 "=",
                                 ""
@@ -38426,7 +38437,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead1\""
@@ -38438,7 +38449,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead2\""
@@ -38465,7 +38476,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "Player2.CenterX()"
                                   ]
@@ -38477,7 +38488,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -38488,7 +38499,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -38498,7 +38509,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -38509,7 +38520,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -38520,7 +38531,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -38538,8 +38549,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -38550,7 +38561,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -38558,7 +38569,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -38569,7 +38580,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -38580,7 +38591,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -38589,7 +38600,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "True",
                                     ""
@@ -38610,7 +38621,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -38632,7 +38643,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -38669,7 +38680,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<",
                                     "Player2.CenterX()"
                                   ]
@@ -38681,7 +38692,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -38692,7 +38703,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -38702,7 +38713,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -38713,7 +38724,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -38724,7 +38735,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -38742,8 +38753,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -38754,7 +38765,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -38762,7 +38773,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -38773,7 +38784,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -38784,7 +38795,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -38793,7 +38804,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "True",
                                     ""
@@ -38814,7 +38825,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -38836,7 +38847,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -38917,7 +38928,7 @@
                               },
                               "parameters": [
                                 "Player1",
-                                "Enemy",
+                                "AllEnemies",
                                 "50",
                                 ""
                               ]
@@ -38929,7 +38940,7 @@
                               "parameters": [
                                 "Player1CollisionBox",
                                 ">",
-                                "Enemy.Y()+55"
+                                "AllEnemies.Y()+55"
                               ]
                             },
                             {
@@ -38939,7 +38950,7 @@
                               "parameters": [
                                 "Player1CollisionBox",
                                 "<",
-                                "Enemy.BoundingBoxBottom()+5"
+                                "AllEnemies.BoundingBoxBottom()+5"
                               ]
                             },
                             {
@@ -38947,7 +38958,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Knockdown",
                                 "=",
                                 ""
@@ -38958,7 +38969,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "CantTakeDamage",
                                 "=",
                                 ""
@@ -38970,7 +38981,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead1\""
@@ -38982,7 +38993,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead2\""
@@ -39009,7 +39020,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "Player1.CenterX()"
                                   ]
@@ -39021,7 +39032,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -39032,7 +39043,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -39042,7 +39053,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -39053,7 +39064,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -39071,8 +39082,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -39083,7 +39094,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -39091,7 +39102,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -39102,7 +39113,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -39113,7 +39124,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -39133,7 +39144,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "True",
                                     ""
@@ -39154,7 +39165,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -39165,7 +39176,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer1",
                                     "True",
                                     ""
@@ -39202,7 +39213,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<",
                                     "Player1.CenterX()"
                                   ]
@@ -39214,7 +39225,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -39225,7 +39236,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -39235,7 +39246,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -39246,7 +39257,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -39264,8 +39275,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -39276,7 +39287,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -39284,7 +39295,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -39295,7 +39306,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -39306,7 +39317,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -39326,7 +39337,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "True",
                                     ""
@@ -39347,7 +39358,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -39358,7 +39369,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer1",
                                     "True",
                                     ""
@@ -39436,7 +39447,7 @@
                               },
                               "parameters": [
                                 "Player2",
-                                "Enemy",
+                                "AllEnemies",
                                 "50",
                                 ""
                               ]
@@ -39448,7 +39459,7 @@
                               "parameters": [
                                 "Player2CollisionBox",
                                 ">",
-                                "Enemy.Y()+55"
+                                "AllEnemies.Y()+55"
                               ]
                             },
                             {
@@ -39458,7 +39469,7 @@
                               "parameters": [
                                 "Player2CollisionBox",
                                 "<",
-                                "Enemy.BoundingBoxBottom()+5"
+                                "AllEnemies.BoundingBoxBottom()+5"
                               ]
                             },
                             {
@@ -39466,7 +39477,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Knockdown",
                                 "=",
                                 ""
@@ -39477,7 +39488,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "CantTakeDamage",
                                 "=",
                                 ""
@@ -39489,7 +39500,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead1\""
@@ -39501,7 +39512,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead2\""
@@ -39528,7 +39539,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "Player2.CenterX()"
                                   ]
@@ -39540,7 +39551,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -39551,7 +39562,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -39561,7 +39572,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -39572,7 +39583,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -39583,7 +39594,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -39601,8 +39612,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -39613,7 +39624,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -39621,7 +39632,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -39632,7 +39643,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -39643,7 +39654,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -39663,7 +39674,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "True",
                                     ""
@@ -39684,7 +39695,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -39721,7 +39732,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<",
                                     "Player2.CenterX()"
                                   ]
@@ -39733,7 +39744,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -39744,7 +39755,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -39754,7 +39765,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -39765,7 +39776,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -39776,7 +39787,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -39794,8 +39805,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -39806,7 +39817,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -39814,7 +39825,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -39825,7 +39836,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -39836,7 +39847,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -39856,7 +39867,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "True",
                                     ""
@@ -39877,7 +39888,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -39968,7 +39979,7 @@
                               },
                               "parameters": [
                                 "Player1",
-                                "Enemy",
+                                "AllEnemies",
                                 "50",
                                 ""
                               ]
@@ -39980,7 +39991,7 @@
                               "parameters": [
                                 "Player1CollisionBox",
                                 ">",
-                                "Enemy.Y()+55"
+                                "AllEnemies.Y()+55"
                               ]
                             },
                             {
@@ -39990,7 +40001,7 @@
                               "parameters": [
                                 "Player1CollisionBox",
                                 "<",
-                                "Enemy.BoundingBoxBottom()+5"
+                                "AllEnemies.BoundingBoxBottom()+5"
                               ]
                             },
                             {
@@ -39998,7 +40009,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Knockdown",
                                 "=",
                                 ""
@@ -40009,7 +40020,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "CantTakeDamage",
                                 "=",
                                 ""
@@ -40021,7 +40032,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead1\""
@@ -40033,7 +40044,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead2\""
@@ -40060,7 +40071,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "Player1.CenterX()"
                                   ]
@@ -40072,7 +40083,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -40083,7 +40094,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -40093,7 +40104,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -40104,7 +40115,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -40122,8 +40133,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -40134,7 +40145,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -40142,7 +40153,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Knockdown",
                                     "True",
                                     ""
@@ -40153,7 +40164,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -40164,7 +40175,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -40175,7 +40186,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -40195,7 +40206,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "True",
                                     ""
@@ -40216,7 +40227,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -40227,7 +40238,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer1",
                                     "True",
                                     ""
@@ -40264,7 +40275,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<",
                                     "Player1.CenterX()"
                                   ]
@@ -40276,7 +40287,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -40287,7 +40298,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -40297,7 +40308,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -40308,7 +40319,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -40326,8 +40337,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -40338,7 +40349,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -40346,7 +40357,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Knockdown",
                                     "True",
                                     ""
@@ -40357,7 +40368,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -40368,7 +40379,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -40379,7 +40390,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -40399,7 +40410,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy",
                                     "True",
                                     ""
@@ -40420,7 +40431,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -40431,7 +40442,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer1",
                                     "True",
                                     ""
@@ -40518,7 +40529,7 @@
                               },
                               "parameters": [
                                 "Player2",
-                                "Enemy",
+                                "AllEnemies",
                                 "50",
                                 ""
                               ]
@@ -40530,7 +40541,7 @@
                               "parameters": [
                                 "Player2CollisionBox",
                                 ">",
-                                "Enemy.Y()+55"
+                                "AllEnemies.Y()+55"
                               ]
                             },
                             {
@@ -40540,7 +40551,7 @@
                               "parameters": [
                                 "Player2CollisionBox",
                                 "<",
-                                "Enemy.BoundingBoxBottom()+5"
+                                "AllEnemies.BoundingBoxBottom()+5"
                               ]
                             },
                             {
@@ -40548,7 +40559,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Knockdown",
                                 "=",
                                 ""
@@ -40559,7 +40570,7 @@
                                 "value": "BooleanObjectVariable"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "CantTakeDamage",
                                 "=",
                                 ""
@@ -40571,7 +40582,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead1\""
@@ -40583,7 +40594,7 @@
                                 "value": "AnimatableCapability::AnimatableBehavior::Name"
                               },
                               "parameters": [
-                                "Enemy",
+                                "AllEnemies",
                                 "Animation",
                                 "=",
                                 "\"Dead2\""
@@ -40610,7 +40621,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     ">",
                                     "Player2.CenterX()"
                                   ]
@@ -40622,7 +40633,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -40633,7 +40644,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -40643,7 +40654,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -40654,7 +40665,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -40665,7 +40676,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -40683,8 +40694,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -40695,7 +40706,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -40703,7 +40714,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Knockdown",
                                     "True",
                                     ""
@@ -40714,7 +40725,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -40725,7 +40736,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -40736,7 +40747,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -40756,7 +40767,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "True",
                                     ""
@@ -40777,7 +40788,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -40814,7 +40825,7 @@
                                     "value": "CenterX"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "<",
                                     "Player2.CenterX()"
                                   ]
@@ -40826,7 +40837,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamage",
                                     "True",
                                     ""
@@ -40837,7 +40848,7 @@
                                     "value": "ActivateBehavior"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Pathfinding",
                                     ""
                                   ]
@@ -40847,7 +40858,7 @@
                                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Animation",
                                     "=",
                                     "\"Hurt\""
@@ -40858,7 +40869,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "TakingDamageFromPlayer2",
                                     "True",
                                     ""
@@ -40869,7 +40880,7 @@
                                     "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ShakeObject_PositionAngle",
                                     "0",
                                     "2",
@@ -40887,8 +40898,8 @@
                                   "parameters": [
                                     "",
                                     "PlayerDamagingEffect",
-                                    "RandomFloatInRange(Enemy.CenterX()-15,Enemy.CenterX()+15)",
-                                    "RandomFloatInRange(Enemy.CenterY()-15,Enemy.CenterY()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterX()-15,AllEnemies.CenterX()+15)",
+                                    "RandomFloatInRange(AllEnemies.CenterY()-15,AllEnemies.CenterY()+15)",
                                     ""
                                   ]
                                 },
@@ -40899,7 +40910,7 @@
                                   "parameters": [
                                     "PlayerDamagingEffect",
                                     "=",
-                                    "Enemy.ZOrder()+1"
+                                    "AllEnemies.ZOrder()+1"
                                   ]
                                 },
                                 {
@@ -40907,7 +40918,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Knockdown",
                                     "True",
                                     ""
@@ -40918,7 +40929,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "Health",
                                     "-",
                                     "8"
@@ -40929,7 +40940,7 @@
                                     "value": "ModVarObjet"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -40940,7 +40951,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 },
@@ -40960,7 +40971,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastAttackedEnemy2",
                                     "True",
                                     ""
@@ -40981,7 +40992,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "CantTakeDamage",
                                     "True",
                                     ""
@@ -41030,7 +41041,7 @@
                         "value": "BooleanObjectVariable"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "TakingDamage",
                         "True",
                         ""
@@ -41041,7 +41052,7 @@
                         "value": "BooleanObjectVariable"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "Knockdown",
                         "=",
                         ""
@@ -41052,7 +41063,7 @@
                         "value": "CompareObjectTimer"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "\"TimeBeforeActivatingTheAIAgain\"",
                         ">=",
                         "0.6"
@@ -41065,7 +41076,7 @@
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "Pathfinding",
                         "yes"
                       ]
@@ -41075,7 +41086,7 @@
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "Animation",
                         "=",
                         "\"Idle\""
@@ -41086,11 +41097,11 @@
                         "value": "PathfindingBehavior::SetDestination"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "Pathfinding",
                         "",
-                        "Enemy.X()",
-                        "Enemy.Y()"
+                        "AllEnemies.X()",
+                        "AllEnemies.Y()"
                       ]
                     },
                     {
@@ -41098,7 +41109,7 @@
                         "value": "ModVarObjet"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "KnockdownCount",
                         "=",
                         "0"
@@ -41109,7 +41120,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "TakingDamage",
                         "False",
                         ""
@@ -41120,7 +41131,7 @@
                         "value": "ModVarObjet"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "RandomMovement",
                         "=",
                         "0"
@@ -41131,7 +41142,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "TakingDamageFromPlayer1",
                         "False",
                         ""
@@ -41142,7 +41153,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "TakingDamageFromPlayer2",
                         "False",
                         ""
@@ -41153,7 +41164,7 @@
                         "value": "RemoveObjectTimer"
                       },
                       "parameters": [
-                        "Enemy",
+                        "AllEnemies",
                         "\"TimeBeforeActivatingTheAIAgain\""
                       ]
                     }
@@ -41797,7 +41808,7 @@
                                                 "value": "SetNumberObjectVariable"
                                               },
                                               "parameters": [
-                                                "Enemy",
+                                                "AllEnemies",
                                                 "FocusOnPlayer1OrPlayer2",
                                                 "=",
                                                 "2"
@@ -42170,7 +42181,7 @@
                                                 "value": "SetNumberObjectVariable"
                                               },
                                               "parameters": [
-                                                "Enemy",
+                                                "AllEnemies",
                                                 "FocusOnPlayer1OrPlayer2",
                                                 "=",
                                                 "1"
@@ -42656,7 +42667,7 @@
                                     "value": "SetBooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownFromPlayerRespawn",
                                     "True",
                                     ""
@@ -42667,7 +42678,7 @@
                                     "value": "SetNumberObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "KnockdownCount",
                                     "+",
                                     "1"
@@ -42678,7 +42689,7 @@
                                     "value": "ResetObjectTimer"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "\"TimeBeforeActivatingTheAIAgain\""
                                   ]
                                 }
@@ -42929,7 +42940,7 @@
                                         "value": "BooleanObjectVariable"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "KnockdownFromPlayerRespawn",
                                         "=",
                                         ""
@@ -42940,7 +42951,7 @@
                                         "value": "BooleanObjectVariable"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "Knockdown",
                                         "=",
                                         ""
@@ -42953,7 +42964,7 @@
                                         "value": "SetBooleanObjectVariable"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "KnockdownFromPlayerRespawn",
                                         "True",
                                         ""
@@ -42964,7 +42975,7 @@
                                         "value": "ModVarObjet"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "KnockdownCount",
                                         "+",
                                         "1"
@@ -42975,7 +42986,7 @@
                                         "value": "ResetObjectTimer"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "\"TimeBeforeActivatingTheAIAgain\""
                                       ]
                                     }
@@ -43193,7 +43204,7 @@
                                     "value": "BooleanObjectVariable"
                                   },
                                   "parameters": [
-                                    "Enemy",
+                                    "AllEnemies",
                                     "ThisIsTheLastEnemyThatAttackedThePlayer",
                                     "True",
                                     ""
@@ -43233,7 +43244,7 @@
                                         "value": "CenterX"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         ">",
                                         "Player1.CenterX()"
                                       ]
@@ -43321,7 +43332,7 @@
                                         "value": "CenterX"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "<",
                                         "Player1.CenterX()"
                                       ]
@@ -43861,7 +43872,7 @@
                                         "value": "BooleanObjectVariable"
                                       },
                                       "parameters": [
-                                        "Enemy",
+                                        "AllEnemies",
                                         "ThisIsTheLastEnemyThatAttackedThePlayer2",
                                         "True",
                                         ""
@@ -43889,7 +43900,7 @@
                                             "value": "CenterX"
                                           },
                                           "parameters": [
-                                            "Enemy",
+                                            "AllEnemies",
                                             ">",
                                             "Player2.CenterX()"
                                           ]
@@ -43965,7 +43976,7 @@
                                             "value": "CenterX"
                                           },
                                           "parameters": [
-                                            "Enemy",
+                                            "AllEnemies",
                                             "<",
                                             "Player2.CenterX()"
                                           ]
@@ -61804,6 +61815,160 @@
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Group",
+                  "name": "Collision and bounds",
+                  "source": "",
+                  "color": {
+                    "b": 251,
+                    "g": 220,
+                    "r": 0,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SeparateFromObjects"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "AllWalls",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreY"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "=",
+                            "Max(156, Min(BOSS1.Y(), 290))"
+                          ]
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreX"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "=",
+                            "Max(0, Min(BOSS1.X(), 566))"
+                          ]
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreX"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "=",
+                            "Max(610, Min(BOSS1.X(), 1206))"
+                          ]
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreX"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "=",
+                            "Max(1250, Min(BOSS1.X(), 1846))"
+                          ]
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "4"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreX"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "=",
+                            "Max(1890, Min(BOSS1.X(), 2486))"
+                          ]
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
                 {
                   "colorB": 228,
                   "colorG": 176,
