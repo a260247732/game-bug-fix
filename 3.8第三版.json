@@ -56539,8 +56539,8 @@
                       "parameters": [
                         "",
                         "FootstepDust",
-                        "Enemy.CenterX()",
-                        "Enemy.BoundingBoxBottom()",
+                        "BOSS1.CenterX()",
+                        "BOSS1.BoundingBoxBottom()",
                         ""
                       ]
                     },
@@ -56551,7 +56551,7 @@
                       "parameters": [
                         "FootstepDust",
                         "=",
-                        "Enemy.ZOrder()+1"
+                        "BOSS1.ZOrder()+1"
                       ]
                     },
                     {
@@ -56737,8 +56737,8 @@
                           "parameters": [
                             "",
                             "BOSS1Shadow",
-                            "Enemy.CenterX()",
-                            "Enemy.BoundingBoxBottom()",
+                            "BOSS1.CenterX()",
+                            "BOSS1.BoundingBoxBottom()",
                             ""
                           ]
                         },
@@ -56840,9 +56840,9 @@
                               "parameters": [
                                 "BOSS1Shadow",
                                 "=",
-                                "Enemy.CenterX()-12",
+                                "BOSS1.CenterX()-12",
                                 "=",
-                                "Enemy.BoundingBoxBottom()-6"
+                                "BOSS1.BoundingBoxBottom()-6"
                               ]
                             },
                             {
@@ -56852,7 +56852,7 @@
                               "parameters": [
                                 "BOSS1Shadow",
                                 "=",
-                                "Enemy.ZOrder()-1"
+                                "BOSS1.ZOrder()-1"
                               ]
                             }
                           ]
@@ -56892,7 +56892,7 @@
                               "parameters": [
                                 "BOSS1Shadow",
                                 "=",
-                                "Enemy.CenterX()-12"
+                                "BOSS1.CenterX()-12"
                               ]
                             },
                             {
@@ -56902,7 +56902,7 @@
                               "parameters": [
                                 "BOSS1Shadow",
                                 "=",
-                                "Enemy.ZOrder()-1"
+                                "BOSS1.ZOrder()-1"
                               ]
                             }
                           ]
@@ -56948,7 +56948,7 @@
                       "parameters": [
                         "BOSS1",
                         "=",
-                        "Enemy.BoundingBoxBottom()"
+                        "BOSS1.BoundingBoxBottom()"
                       ]
                     }
                   ]
@@ -57939,7 +57939,7 @@
                               "parameters": [
                                 "EnemyHealthBar",
                                 "=",
-                                "Enemy.Health",
+                                "BOSS1.Health",
                                 ""
                               ]
                             },
@@ -57963,7 +57963,7 @@
                               "parameters": [
                                 "EnemyHealthBar",
                                 "=",
-                                "Enemy.Health",
+                                "BOSS1.Health",
                                 ""
                               ]
                             }
@@ -58471,7 +58471,7 @@
                               "parameters": [
                                 "EnemyHealthBar",
                                 "=",
-                                "Enemy.Health",
+                                "BOSS1.Health",
                                 ""
                               ]
                             },
@@ -58495,7 +58495,7 @@
                               "parameters": [
                                 "EnemyHealthBar",
                                 "=",
-                                "Enemy.Health",
+                                "BOSS1.Health",
                                 ""
                               ]
                             }
@@ -58852,7 +58852,7 @@
                             "BOSS1",
                             "KnockdownCount",
                             ">=",
-                            "Enemy.NumberOfHitsToGetKnockedDown"
+                            "BOSS1.NumberOfHitsToGetKnockedDown"
                           ]
                         },
                         {
@@ -59526,8 +59526,8 @@
                         "BOSS1",
                         "Pathfinding",
                         "",
-                        "Enemy.X()",
-                        "Enemy.Y()"
+                        "BOSS1.X()",
+                        "BOSS1.Y()"
                       ]
                     },
                     {
@@ -59647,8 +59647,8 @@
                                     "BOSS1",
                                     "Pathfinding",
                                     "",
-                                    "Enemy.X()",
-                                    "Enemy.Y()"
+                                    "BOSS1.X()",
+                                    "BOSS1.Y()"
                                   ]
                                 },
                                 {
@@ -60035,8 +60035,8 @@
                                       "parameters": [
                                         "",
                                         "EnemyFallingEffect",
-                                        "Enemy.CenterX()",
-                                        "Enemy.BoundingBoxBottom()",
+                                        "BOSS1.CenterX()",
+                                        "BOSS1.BoundingBoxBottom()",
                                         ""
                                       ]
                                     },
@@ -60047,7 +60047,7 @@
                                       "parameters": [
                                         "EnemyFallingEffect",
                                         "=",
-                                        "Enemy.ZOrder()-10"
+                                        "BOSS1.ZOrder()-10"
                                       ]
                                     },
                                     {
@@ -60185,8 +60185,8 @@
                                     "BOSS1",
                                     "Pathfinding",
                                     "",
-                                    "Enemy.X()",
-                                    "Enemy.Y()"
+                                    "BOSS1.X()",
+                                    "BOSS1.Y()"
                                   ]
                                 },
                                 {
@@ -60513,8 +60513,8 @@
                                       "parameters": [
                                         "",
                                         "EnemyFallingEffect",
-                                        "Enemy.CenterX()",
-                                        "Enemy.BoundingBoxBottom()",
+                                        "BOSS1.CenterX()",
+                                        "BOSS1.BoundingBoxBottom()",
                                         ""
                                       ]
                                     },
@@ -60525,7 +60525,7 @@
                                       "parameters": [
                                         "EnemyFallingEffect",
                                         "=",
-                                        "Enemy.ZOrder()-10"
+                                        "BOSS1.ZOrder()-10"
                                       ]
                                     },
                                     {
@@ -60676,8 +60676,8 @@
                                     "BOSS1",
                                     "Pathfinding",
                                     "",
-                                    "Enemy.X()",
-                                    "Enemy.Y()"
+                                    "BOSS1.X()",
+                                    "BOSS1.Y()"
                                   ]
                                 },
                                 {
@@ -61234,8 +61234,8 @@
                                       "parameters": [
                                         "",
                                         "EnemyFallingEffect",
-                                        "Enemy.CenterX()",
-                                        "Enemy.BoundingBoxBottom()",
+                                        "BOSS1.CenterX()",
+                                        "BOSS1.BoundingBoxBottom()",
                                         ""
                                       ]
                                     },
@@ -61246,7 +61246,7 @@
                                       "parameters": [
                                         "EnemyFallingEffect",
                                         "=",
-                                        "Enemy.ZOrder()-10"
+                                        "BOSS1.ZOrder()-10"
                                       ]
                                     },
                                     {
@@ -61372,8 +61372,8 @@
                                     "BOSS1",
                                     "Pathfinding",
                                     "",
-                                    "Enemy.X()",
-                                    "Enemy.Y()"
+                                    "BOSS1.X()",
+                                    "BOSS1.Y()"
                                   ]
                                 },
                                 {
@@ -61700,8 +61700,8 @@
                                       "parameters": [
                                         "",
                                         "EnemyFallingEffect",
-                                        "Enemy.CenterX()",
-                                        "Enemy.BoundingBoxBottom()",
+                                        "BOSS1.CenterX()",
+                                        "BOSS1.BoundingBoxBottom()",
                                         ""
                                       ]
                                     },
@@ -61712,7 +61712,7 @@
                                       "parameters": [
                                         "EnemyFallingEffect",
                                         "=",
-                                        "Enemy.ZOrder()-10"
+                                        "BOSS1.ZOrder()-10"
                                       ]
                                     },
                                     {
@@ -61875,7 +61875,7 @@
                                   "parameters": [
                                     "Player1",
                                     ">",
-                                    "Enemy.Y()-5"
+                                    "BOSS1.Y()-5"
                                   ]
                                 },
                                 {
@@ -61885,7 +61885,7 @@
                                   "parameters": [
                                     "Player1",
                                     "<",
-                                    "Enemy.BoundingBoxBottom()-56"
+                                    "BOSS1.BoundingBoxBottom()-56"
                                   ]
                                 },
                                 {
@@ -61987,7 +61987,7 @@
                                       "parameters": [
                                         "Player1",
                                         ">",
-                                        "Enemy.Y()-5"
+                                        "BOSS1.Y()-5"
                                       ]
                                     },
                                     {
@@ -61998,7 +61998,7 @@
                                       "parameters": [
                                         "Player1",
                                         "<",
-                                        "Enemy.BoundingBoxBottom()-56"
+                                        "BOSS1.BoundingBoxBottom()-56"
                                       ]
                                     },
                                     {
@@ -62117,7 +62117,7 @@
                                   "parameters": [
                                     "Player2",
                                     ">",
-                                    "Enemy.Y()-5"
+                                    "BOSS1.Y()-5"
                                   ]
                                 },
                                 {
@@ -62127,7 +62127,7 @@
                                   "parameters": [
                                     "Player2",
                                     "<",
-                                    "Enemy.BoundingBoxBottom()-56"
+                                    "BOSS1.BoundingBoxBottom()-56"
                                   ]
                                 },
                                 {
@@ -62217,7 +62217,7 @@
                                       "parameters": [
                                         "Player2",
                                         ">",
-                                        "Enemy.Y()-5"
+                                        "BOSS1.Y()-5"
                                       ]
                                     },
                                     {
@@ -62228,7 +62228,7 @@
                                       "parameters": [
                                         "Player2",
                                         "<",
-                                        "Enemy.BoundingBoxBottom()-56"
+                                        "BOSS1.BoundingBoxBottom()-56"
                                       ]
                                     },
                                     {
@@ -62442,7 +62442,7 @@
                                       "parameters": [
                                         "Player1",
                                         ">",
-                                        "Enemy.Y()-5"
+                                        "BOSS1.Y()-5"
                                       ]
                                     },
                                     {
@@ -62452,7 +62452,7 @@
                                       "parameters": [
                                         "Player1",
                                         "<",
-                                        "Enemy.BoundingBoxBottom()-56"
+                                        "BOSS1.BoundingBoxBottom()-56"
                                       ]
                                     },
                                     {
@@ -62750,7 +62750,7 @@
                                           "parameters": [
                                             "Player1",
                                             ">",
-                                            "Enemy.Y()-5"
+                                            "BOSS1.Y()-5"
                                           ]
                                         },
                                         {
@@ -62760,7 +62760,7 @@
                                           "parameters": [
                                             "Player1",
                                             "<",
-                                            "Enemy.BoundingBoxBottom()-56"
+                                            "BOSS1.BoundingBoxBottom()-56"
                                           ]
                                         },
                                         {
@@ -62815,7 +62815,7 @@
                                                   "parameters": [
                                                     "Player1",
                                                     ">",
-                                                    "Enemy.CenterX()"
+                                                    "BOSS1.CenterX()"
                                                   ]
                                                 },
                                                 {
@@ -62843,7 +62843,7 @@
                                                   "parameters": [
                                                     "Player1",
                                                     "<",
-                                                    "Enemy.CenterX()"
+                                                    "BOSS1.CenterX()"
                                                   ]
                                                 },
                                                 {
@@ -63069,7 +63069,7 @@
                                           "parameters": [
                                             "Player2",
                                             ">",
-                                            "Enemy.Y()-5"
+                                            "BOSS1.Y()-5"
                                           ]
                                         },
                                         {
@@ -63079,7 +63079,7 @@
                                           "parameters": [
                                             "Player2",
                                             "<",
-                                            "Enemy.BoundingBoxBottom()-56"
+                                            "BOSS1.BoundingBoxBottom()-56"
                                           ]
                                         },
                                         {
@@ -63134,7 +63134,7 @@
                                                   "parameters": [
                                                     "Player2",
                                                     ">",
-                                                    "Enemy.CenterX()"
+                                                    "BOSS1.CenterX()"
                                                   ]
                                                 },
                                                 {
@@ -63162,7 +63162,7 @@
                                                   "parameters": [
                                                     "Player2",
                                                     "<",
-                                                    "Enemy.CenterX()"
+                                                    "BOSS1.CenterX()"
                                                   ]
                                                 },
                                                 {
@@ -63432,7 +63432,7 @@
                                 "BOSS1",
                                 "RepeatTimer",
                                 "\"Movement\"",
-                                "Enemy.RandomMovement",
+                                "BOSS1.RandomMovement",
                                 ""
                               ]
                             },
@@ -63629,8 +63629,8 @@
                                         "BOSS1",
                                         "Pathfinding",
                                         "",
-                                        "Enemy.X()",
-                                        "Enemy.Y()"
+                                        "BOSS1.X()",
+                                        "BOSS1.Y()"
                                       ]
                                     },
                                     {
@@ -63930,7 +63930,7 @@
                                         "BOSS1",
                                         "RepeatTimer",
                                         "\"Movement\"",
-                                        "Enemy.RandomMovement",
+                                        "BOSS1.RandomMovement",
                                         ""
                                       ]
                                     },
@@ -64126,8 +64126,8 @@
                                                 "BOSS1",
                                                 "Pathfinding",
                                                 "",
-                                                "Enemy.X()",
-                                                "Enemy.Y()"
+                                                "BOSS1.X()",
+                                                "BOSS1.Y()"
                                               ]
                                             },
                                             {
@@ -64377,7 +64377,7 @@
                                         "BOSS1",
                                         "RepeatTimer",
                                         "\"Movement\"",
-                                        "Enemy.RandomMovement",
+                                        "BOSS1.RandomMovement",
                                         ""
                                       ]
                                     },
@@ -64573,8 +64573,8 @@
                                                 "BOSS1",
                                                 "Pathfinding",
                                                 "",
-                                                "Enemy.X()",
-                                                "Enemy.Y()"
+                                                "BOSS1.X()",
+                                                "BOSS1.Y()"
                                               ]
                                             },
                                             {
@@ -64842,7 +64842,7 @@
                             "BOSS1",
                             "RepeatTimer",
                             "\"Movement\"",
-                            "Enemy.RandomMovement",
+                            "BOSS1.RandomMovement",
                             ""
                           ]
                         },
@@ -65568,7 +65568,7 @@
                                     "BOSS1",
                                     "RepeatTimer",
                                     "\"Movement\"",
-                                    "Enemy.RandomMovement",
+                                    "BOSS1.RandomMovement",
                                     ""
                                   ]
                                 },
@@ -66055,7 +66055,7 @@
                                     "BOSS1",
                                     "RepeatTimer",
                                     "\"Movement\"",
-                                    "Enemy.RandomMovement",
+                                    "BOSS1.RandomMovement",
                                     ""
                                   ]
                                 },
