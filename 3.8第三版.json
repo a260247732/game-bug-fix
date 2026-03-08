@@ -56289,7 +56289,7 @@
                                   "parameters": [
                                     "",
                                     "BOSS1",
-                                    "646",
+                                    "200",
                                     "190",
                                     ""
                                   ]
@@ -56323,7 +56323,7 @@
                                   "parameters": [
                                     "BOSS1",
                                     "PlatformerObject",
-                                    ""
+                                    "yes"
                                   ]
                                 },
                                 {
@@ -56333,7 +56333,7 @@
                                   "parameters": [
                                     "BOSS1",
                                     "Pathfinding",
-                                    ""
+                                    "yes"
                                   ]
                                 }
                               ]
