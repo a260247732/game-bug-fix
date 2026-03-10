@@ -66293,6 +66293,33 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreX"
+                          },
+                          "parameters": [
+                            "BOSS1",
+                            "=",
+                            "Max(2530, Min(BOSS1.X(), 3126))"
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -68308,6 +68335,35 @@
                                           ]
                                         }
                                       ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "PlayerIsAtStage",
+                                            "=",
+                                            "5"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PathfindingBehavior::SetDestination"
+                                          },
+                                          "parameters": [
+                                            "BOSS1",
+                                            "Pathfinding",
+                                            "",
+                                            "RandomFloatInRange(2530,3126)",
+                                            "RandomFloatInRange(219,290)"
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -68781,6 +68837,35 @@
                                                   ]
                                                 }
                                               ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "NumberVariable"
+                                                  },
+                                                  "parameters": [
+                                                    "PlayerIsAtStage",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PathfindingBehavior::SetDestination"
+                                                  },
+                                                  "parameters": [
+                                                    "BOSS1",
+                                                    "Pathfinding",
+                                                    "",
+                                                    "RandomFloatInRange(2530,3126)",
+                                                    "RandomFloatInRange(219,290)"
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
@@ -69224,6 +69309,35 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(1890,2486)",
+                                                    "RandomFloatInRange(219,290)"
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "NumberVariable"
+                                                  },
+                                                  "parameters": [
+                                                    "PlayerIsAtStage",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PathfindingBehavior::SetDestination"
+                                                  },
+                                                  "parameters": [
+                                                    "BOSS1",
+                                                    "Pathfinding",
+                                                    "",
+                                                    "RandomFloatInRange(2530,3126)",
                                                     "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
@@ -69741,6 +69855,35 @@
                                         "Pathfinding",
                                         "",
                                         "RandomFloatInRange(1890,2486)",
+                                        "RandomFloatInRange(219,290)"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "NumberVariable"
+                                      },
+                                      "parameters": [
+                                        "PlayerIsAtStage",
+                                        "=",
+                                        "5"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "PathfindingBehavior::SetDestination"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "Pathfinding",
+                                        "",
+                                        "RandomFloatInRange(2530,3126)",
                                         "RandomFloatInRange(219,290)"
                                       ]
                                     }
@@ -70471,6 +70614,35 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "NumberVariable"
+                                              },
+                                              "parameters": [
+                                                "PlayerIsAtStage",
+                                                "=",
+                                                "5"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "PathfindingBehavior::SetDestination"
+                                              },
+                                              "parameters": [
+                                                "BOSS1",
+                                                "Pathfinding",
+                                                "",
+                                                "RandomFloatInRange(2530,3126)",
+                                                "RandomFloatInRange(219,290)"
+                                              ]
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
@@ -70954,6 +71126,35 @@
                                                 "Pathfinding",
                                                 "",
                                                 "RandomFloatInRange(1890,2486)",
+                                                "RandomFloatInRange(219,290)"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "NumberVariable"
+                                              },
+                                              "parameters": [
+                                                "PlayerIsAtStage",
+                                                "=",
+                                                "5"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "PathfindingBehavior::SetDestination"
+                                              },
+                                              "parameters": [
+                                                "BOSS1",
+                                                "Pathfinding",
+                                                "",
+                                                "RandomFloatInRange(2530,3126)",
                                                 "RandomFloatInRange(219,290)"
                                               ]
                                             }
