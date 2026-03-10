@@ -39290,7 +39290,7 @@
                               "parameters": [
                                 "Player1",
                                 ">",
-                                "BOSS1.Y()-7"
+                                "BOSS1.BoundingBoxBottom()-60"
                               ]
                             },
                             {
@@ -39300,7 +39300,7 @@
                               "parameters": [
                                 "Player1",
                                 "<",
-                                "BOSS1.BoundingBoxBottom()-55"
+                                "BOSS1.BoundingBoxBottom()+5"
                               ]
                             },
                             {
@@ -40443,7 +40443,7 @@
                               "parameters": [
                                 "Player2",
                                 ">",
-                                "BOSS1.Y()-7"
+                                "BOSS1.BoundingBoxBottom()-60"
                               ]
                             },
                             {
@@ -40453,7 +40453,7 @@
                               "parameters": [
                                 "Player2",
                                 "<",
-                                "BOSS1.BoundingBoxBottom()-55"
+                                "BOSS1.BoundingBoxBottom()+5"
                               ]
                             },
                             {
@@ -45233,6 +45233,17 @@
                         "AllEnemies",
                         "\"TimeBeforeActivatingTheAIAgain\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "AllEnemies",
+                        "CantTakeDamage",
+                        "False",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -45370,6 +45381,17 @@
                       "parameters": [
                         "BOSS1",
                         "\"TimeBeforeActivatingTheAIAgain\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "BOSS1",
+                        "CantTakeDamage",
+                        "False",
+                        ""
                       ]
                     }
                   ]
@@ -60505,7 +60527,7 @@
                                     "",
                                     "BOSS1",
                                     "200",
-                                    "190",
+                                    "266",
                                     ""
                                   ]
                                 },
@@ -60628,7 +60650,7 @@
                                     "",
                                     "BOSS1",
                                     "200",
-                                    "190",
+                                    "266",
                                     ""
                                   ]
                                 },
@@ -63994,6 +64016,17 @@
                                         "=",
                                         "0"
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "CantTakeDamage",
+                                        "False",
+                                        ""
+                                      ]
                                     }
                                   ]
                                 },
@@ -64101,6 +64134,17 @@
                                         "KnockdownCount",
                                         "=",
                                         "0"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "CantTakeDamage",
+                                        "False",
+                                        ""
                                       ]
                                     }
                                   ]
@@ -64520,6 +64564,17 @@
                                         "=",
                                         "0"
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "CantTakeDamage",
+                                        "False",
+                                        ""
+                                      ]
                                     }
                                   ]
                                 },
@@ -64615,6 +64670,17 @@
                                         "KnockdownCount",
                                         "=",
                                         "0"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "CantTakeDamage",
+                                        "False",
+                                        ""
                                       ]
                                     }
                                   ]
@@ -65028,6 +65094,17 @@
                                             "=",
                                             "0"
                                           ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "BOSS1",
+                                            "CantTakeDamage",
+                                            "False",
+                                            ""
+                                          ]
                                         }
                                       ]
                                     },
@@ -65123,6 +65200,17 @@
                                             "KnockdownCount",
                                             "=",
                                             "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "BOSS1",
+                                            "CantTakeDamage",
+                                            "False",
+                                            ""
                                           ]
                                         }
                                       ]
@@ -65239,6 +65327,17 @@
                                             "=",
                                             "0"
                                           ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "BOSS1",
+                                            "CantTakeDamage",
+                                            "False",
+                                            ""
+                                          ]
                                         }
                                       ]
                                     },
@@ -65334,6 +65433,17 @@
                                             "KnockdownCount",
                                             "=",
                                             "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "BOSS1",
+                                            "CantTakeDamage",
+                                            "False",
+                                            ""
                                           ]
                                         }
                                       ]
@@ -65707,6 +65817,17 @@
                                         "=",
                                         "0"
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "CantTakeDamage",
+                                        "False",
+                                        ""
+                                      ]
                                     }
                                   ]
                                 },
@@ -65802,6 +65923,17 @@
                                         "KnockdownCount",
                                         "=",
                                         "0"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "BOSS1",
+                                        "CantTakeDamage",
+                                        "False",
+                                        ""
                                       ]
                                     }
                                   ]
