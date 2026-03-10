@@ -66288,7 +66288,7 @@
                                   "parameters": [
                                     "Player1",
                                     ">",
-                                    "BOSS1.Y()-5"
+                                    "BOSS1.BoundingBoxBottom()-120"
                                   ]
                                 },
                                 {
@@ -66298,7 +66298,7 @@
                                   "parameters": [
                                     "Player1",
                                     "<",
-                                    "BOSS1.BoundingBoxBottom()-56"
+                                    "BOSS1.BoundingBoxBottom()+10"
                                   ]
                                 },
                                 {
@@ -66529,7 +66529,7 @@
                                   "parameters": [
                                     "Player2",
                                     ">",
-                                    "BOSS1.Y()-5"
+                                    "BOSS1.BoundingBoxBottom()-120"
                                   ]
                                 },
                                 {
@@ -66539,7 +66539,7 @@
                                   "parameters": [
                                     "Player2",
                                     "<",
-                                    "BOSS1.BoundingBoxBottom()-56"
+                                    "BOSS1.BoundingBoxBottom()+10"
                                   ]
                                 },
                                 {
@@ -66851,7 +66851,7 @@
                                       "parameters": [
                                         "Player1",
                                         ">",
-                                        "BOSS1.Y()-5"
+                                        "BOSS1.BoundingBoxBottom()-120"
                                       ]
                                     },
                                     {
@@ -66861,7 +66861,7 @@
                                       "parameters": [
                                         "Player1",
                                         "<",
-                                        "BOSS1.BoundingBoxBottom()-56"
+                                        "BOSS1.BoundingBoxBottom()+10"
                                       ]
                                     },
                                     {
@@ -67157,7 +67157,7 @@
                                           "parameters": [
                                             "Player1",
                                             ">",
-                                            "BOSS1.Y()-5"
+                                            "BOSS1.BoundingBoxBottom()-120"
                                           ]
                                         },
                                         {
@@ -67167,7 +67167,7 @@
                                           "parameters": [
                                             "Player1",
                                             "<",
-                                            "BOSS1.BoundingBoxBottom()-56"
+                                            "BOSS1.BoundingBoxBottom()+10"
                                           ]
                                         },
                                         {
@@ -67475,7 +67475,7 @@
                                           "parameters": [
                                             "Player2",
                                             ">",
-                                            "BOSS1.Y()-5"
+                                            "BOSS1.BoundingBoxBottom()-120"
                                           ]
                                         },
                                         {
@@ -67485,7 +67485,7 @@
                                           "parameters": [
                                             "Player2",
                                             "<",
-                                            "BOSS1.BoundingBoxBottom()-56"
+                                            "BOSS1.BoundingBoxBottom()+10"
                                           ]
                                         },
                                         {
@@ -69474,7 +69474,7 @@
                                             "Pathfinding",
                                             "",
                                             "RandomFloatInRange(Player1CollisionBox.X()-84,Player1CollisionBox.X()-64)",
-                                            "RandomFloatInRange(Player1CollisionBox.Y()-67,Player1CollisionBox.Y()-59)"
+                                            "RandomFloatInRange(219,290)"
                                           ]
                                         }
                                       ]
@@ -69503,7 +69503,7 @@
                                             "Pathfinding",
                                             "",
                                             "RandomFloatInRange(Player1CollisionBox.X()-8,Player1CollisionBox.X()+8)",
-                                            "RandomFloatInRange(Player1CollisionBox.Y()-67,Player1CollisionBox.Y()-59)"
+                                            "RandomFloatInRange(219,290)"
                                           ]
                                         }
                                       ]
@@ -69550,7 +69550,7 @@
                                             "Pathfinding",
                                             "",
                                             "RandomFloatInRange(Player1CollisionBox.X()-84,Player1CollisionBox.X()-64)",
-                                            "RandomFloatInRange(Player1CollisionBox.Y()-64,Player1CollisionBox.Y()-59)"
+                                            "RandomFloatInRange(219,290)"
                                           ]
                                         }
                                       ]
@@ -69579,7 +69579,7 @@
                                             "Pathfinding",
                                             "",
                                             "RandomFloatInRange(Player1CollisionBox.X()-8,Player1CollisionBox.X()+8)",
-                                            "RandomFloatInRange(Player1CollisionBox.Y()-64,Player1CollisionBox.Y()-59)"
+                                            "RandomFloatInRange(219,290)"
                                           ]
                                         }
                                       ]
@@ -70225,7 +70225,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player1CollisionBox.X()-84,Player1CollisionBox.X()-64)",
-                                                    "RandomFloatInRange(Player1CollisionBox.Y()-67,Player1CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70254,7 +70254,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player1CollisionBox.X()-8,Player1CollisionBox.X()+8)",
-                                                    "RandomFloatInRange(Player1CollisionBox.Y()-67,Player1CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70301,7 +70301,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player1CollisionBox.X()-84,Player1CollisionBox.X()-64)",
-                                                    "RandomFloatInRange(Player1CollisionBox.Y()-64,Player1CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70330,7 +70330,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player1CollisionBox.X()-8,Player1CollisionBox.X()+8)",
-                                                    "RandomFloatInRange(Player1CollisionBox.Y()-64,Player1CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70738,7 +70738,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player2CollisionBox.X()-84,Player2CollisionBox.X()-64)",
-                                                    "RandomFloatInRange(Player2CollisionBox.Y()-67,Player2CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70767,7 +70767,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player2CollisionBox.X()-8,Player2CollisionBox.X()+8)",
-                                                    "RandomFloatInRange(Player2CollisionBox.Y()-67,Player2CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70814,7 +70814,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player2CollisionBox.X()-84,Player2CollisionBox.X()-64)",
-                                                    "RandomFloatInRange(Player2CollisionBox.Y()-64,Player2CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -70843,7 +70843,7 @@
                                                     "Pathfinding",
                                                     "",
                                                     "RandomFloatInRange(Player2CollisionBox.X()-8,Player2CollisionBox.X()+8)",
-                                                    "RandomFloatInRange(Player2CollisionBox.Y()-64,Player2CollisionBox.Y()-59)"
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
