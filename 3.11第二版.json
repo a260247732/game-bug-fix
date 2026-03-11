@@ -66851,7 +66851,7 @@
                                       "parameters": [
                                         "Player1",
                                         ">",
-                                        "BOSS1.BoundingBoxBottom()-120"
+                                        "BOSS1.Y()-5"
                                       ]
                                     },
                                     {
@@ -66861,7 +66861,7 @@
                                       "parameters": [
                                         "Player1",
                                         "<",
-                                        "BOSS1.BoundingBoxBottom()+10"
+                                        "BOSS1.BoundingBoxBottom()-56"
                                       ]
                                     },
                                     {
@@ -67157,7 +67157,7 @@
                                           "parameters": [
                                             "Player1",
                                             ">",
-                                            "BOSS1.BoundingBoxBottom()-120"
+                                            "BOSS1.Y()-5"
                                           ]
                                         },
                                         {
@@ -67167,7 +67167,7 @@
                                           "parameters": [
                                             "Player1",
                                             "<",
-                                            "BOSS1.BoundingBoxBottom()+10"
+                                            "BOSS1.BoundingBoxBottom()-56"
                                           ]
                                         },
                                         {
@@ -67475,7 +67475,7 @@
                                           "parameters": [
                                             "Player2",
                                             ">",
-                                            "BOSS1.BoundingBoxBottom()-120"
+                                            "BOSS1.Y()-5"
                                           ]
                                         },
                                         {
@@ -67485,7 +67485,7 @@
                                           "parameters": [
                                             "Player2",
                                             "<",
-                                            "BOSS1.BoundingBoxBottom()+10"
+                                            "BOSS1.BoundingBoxBottom()-56"
                                           ]
                                         },
                                         {
