@@ -30953,16 +30953,6 @@
                             "=",
                             "max(250, min(Player2CollisionBox.Y(), 350))"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "MettreY"
-                          },
-                          "parameters": [
-                            "Enemy",
-                            "=",
-                            "max(250, min(Enemy.Y(), 350))"
-                          ]
                         }
                       ]
                     }
@@ -61184,6 +61174,35 @@
                                           ]
                                         }
                                       ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "PlayerIsAtStage",
+                                            "=",
+                                            "5"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PathfindingBehavior::SetDestination"
+                                          },
+                                          "parameters": [
+                                            "Enemy",
+                                            "Pathfinding",
+                                            "",
+                                            "RandomFloatInRange(2530,3126)",
+                                            "RandomFloatInRange(219,290)"
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -61653,6 +61672,35 @@
                                                   ]
                                                 }
                                               ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "NumberVariable"
+                                                  },
+                                                  "parameters": [
+                                                    "PlayerIsAtStage",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PathfindingBehavior::SetDestination"
+                                                  },
+                                                  "parameters": [
+                                                    "Enemy",
+                                                    "Pathfinding",
+                                                    "",
+                                                    "RandomFloatInRange(2530,3126)",
+                                                    "RandomFloatInRange(219,290)"
+                                                  ]
+                                                }
+                                              ]
                                             }
                                           ]
                                         }
@@ -62094,6 +62142,35 @@
                                                     "",
                                                     "RandomFloatInRange(1890,2486)",
                                                     "RandomFloatInRange(156,290)"
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "NumberVariable"
+                                                  },
+                                                  "parameters": [
+                                                    "PlayerIsAtStage",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PathfindingBehavior::SetDestination"
+                                                  },
+                                                  "parameters": [
+                                                    "Enemy",
+                                                    "Pathfinding",
+                                                    "",
+                                                    "RandomFloatInRange(2530,3126)",
+                                                    "RandomFloatInRange(219,290)"
                                                   ]
                                                 }
                                               ]
@@ -62608,6 +62685,35 @@
                                         "",
                                         "RandomFloatInRange(1890,2486)",
                                         "RandomFloatInRange(156,290)"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "NumberVariable"
+                                      },
+                                      "parameters": [
+                                        "PlayerIsAtStage",
+                                        "=",
+                                        "5"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "PathfindingBehavior::SetDestination"
+                                      },
+                                      "parameters": [
+                                        "Enemy",
+                                        "Pathfinding",
+                                        "",
+                                        "RandomFloatInRange(2530,3126)",
+                                        "RandomFloatInRange(219,290)"
                                       ]
                                     }
                                   ]
@@ -63333,6 +63439,35 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "NumberVariable"
+                                              },
+                                              "parameters": [
+                                                "PlayerIsAtStage",
+                                                "=",
+                                                "5"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "PathfindingBehavior::SetDestination"
+                                              },
+                                              "parameters": [
+                                                "Enemy",
+                                                "Pathfinding",
+                                                "",
+                                                "RandomFloatInRange(2530,3126)",
+                                                "RandomFloatInRange(219,290)"
+                                              ]
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
@@ -63814,6 +63949,35 @@
                                                 "",
                                                 "RandomFloatInRange(1890,2486)",
                                                 "RandomFloatInRange(156,290)"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "NumberVariable"
+                                              },
+                                              "parameters": [
+                                                "PlayerIsAtStage",
+                                                "=",
+                                                "5"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "PathfindingBehavior::SetDestination"
+                                              },
+                                              "parameters": [
+                                                "Enemy",
+                                                "Pathfinding",
+                                                "",
+                                                "RandomFloatInRange(2530,3126)",
+                                                "RandomFloatInRange(219,290)"
                                               ]
                                             }
                                           ]
