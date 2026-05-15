@@ -23372,6 +23372,164 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Enemy2HealthBar",
+          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "variant": "",
+          "variables": [
+            {
+              "folded": true,
+              "name": "OnlyShowThisHealthBar",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "PreviousHighValueDuration": 0.1,
+            "ShowLabel": false,
+            "BarTopPadding": 1,
+            "BarBottomPadding": 1,
+            "BarLeftPadding": 1,
+            "BarRightPadding": 1,
+            "MaxValue": 100,
+            "InitialValue": 100,
+            "EasingDuration": 0.08
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 1,
+              "height": 6,
+              "leftMargin": 1,
+              "rightMargin": 1,
+              "texture": "Flat Bar White Border.png3",
+              "tiled": false,
+              "topMargin": 1,
+              "width": 55
+            },
+            "Buffer": {
+              "bottomMargin": 0,
+              "height": 24,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Flat Bar Red Fill Bar Buffer.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 1
+            },
+            "FillBar": {
+              "bottomMargin": 0,
+              "height": 24,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Flat Bar Red Fill Bar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 24
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "8 / 16",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 16,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "8 / 16",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 16,
+                "lineHeight": 0,
+                "color": "255;255;255"
+              }
+            }
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Enemy2ProfilePicture",
+          "persistentUuid": "c58cbe20-d670-4ad2-87ea-c91bf1b7fd9d",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "EnemyProfilePicture",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "EnemyProfilePicture2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 18,
+                            "y": 0
+                          },
+                          {
+                            "x": 18,
+                            "y": 18
+                          },
+                          {
+                            "x": 0,
+                            "y": 18
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -26457,7 +26615,7 @@
                           "parameters": [
                             "NumberOfDeadEnemies",
                             "=",
-                            "12"
+                            "13"
                           ]
                         },
                         {
@@ -26568,7 +26726,7 @@
                           "parameters": [
                             "NumberOfDeadEnemies",
                             "=",
-                            "22"
+                            "23"
                           ]
                         },
                         {
@@ -26700,7 +26858,7 @@
                           "parameters": [
                             "NumberOfDeadEnemies",
                             "=",
-                            "35"
+                            "37"
                           ]
                         },
                         {
@@ -30337,7 +30495,7 @@
                       "parameters": [
                         "NumberOfDeadEnemies",
                         "=",
-                        "12"
+                        "13"
                       ]
                     },
                     {
@@ -30451,7 +30609,7 @@
                       "parameters": [
                         "NumberOfDeadEnemies",
                         "=",
-                        "22"
+                        "23"
                       ]
                     },
                     {
@@ -30543,7 +30701,7 @@
                   "parameters": [
                     "NumberOfDeadEnemies",
                     "=",
-                    "22"
+                    "23"
                   ]
                 },
                 {
@@ -67526,6 +67684,376 @@
                           "parameters": []
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable",
+                            "inverted": false
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "3"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once",
+                            "inverted": false
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2",
+                            "1600",
+                            "230",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "NumberOfHitsToGetKnockedDown",
+                            "=",
+                            "RandomInRange(5,9)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "FocusOnPlayer1OrPlayer2",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "PlatformerObject",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2ProfilePicture",
+                            "454",
+                            "39",
+                            "\"UI\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2HealthBar",
+                            "473",
+                            "51",
+                            "\"UI\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Enemy2ProfilePicture",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Enemy2HealthBar",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2HealthBar",
+                            "Enemy2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2ProfilePicture",
+                            "Enemy2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "HealthBarIsCreatedForPlayer1",
+                            "True",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "HealthBarIsCreatedForPlayer2",
+                            "True",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable",
+                            "inverted": false
+                          },
+                          "parameters": [
+                            "PlayerIsAtStage",
+                            "=",
+                            "5"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable",
+                            "inverted": false
+                          },
+                          "parameters": [
+                            "Stage5IntroFinished",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once",
+                            "inverted": false
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2",
+                            "3520",
+                            "230",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "NumberOfHitsToGetKnockedDown",
+                            "=",
+                            "RandomInRange(5,9)"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "FocusOnPlayer1OrPlayer2",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "PlatformerObject",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2ProfilePicture",
+                            "454",
+                            "39",
+                            "\"UI\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2HealthBar",
+                            "473",
+                            "51",
+                            "\"UI\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Enemy2ProfilePicture",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Enemy2HealthBar",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2HealthBar",
+                            "Enemy2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy2ProfilePicture",
+                            "Enemy2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "HealthBarIsCreatedForPlayer1",
+                            "True",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Enemy2",
+                            "HealthBarIsCreatedForPlayer2",
+                            "True",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ],
                   "parameters": []
@@ -68055,6 +68583,1107 @@
             },
             {
               "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Health bar",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "1 player mode",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "_2PlayersModeActivated",
+                            "=",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy2",
+                          "conditions": [],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "for each instances of enemy, if enemy is taking damage (variable is true)"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemy2",
+                                    "TakingDamage",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "enemy healthbar is not created under player 1 (variable is false)\nand number of picked enemy is equal to 1 (we use this condition to pick 1 enemy at a time)\nthen we create the enemy profile picture and health bar under the player UI\nand we link them to the enemy, then we set the variable to true (to make this event run once for every enemy)"
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "HealthBarIsCreatedForPlayer1",
+                                        "",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PickedInstancesCount"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "=",
+                                        "1"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Enemy2ProfilePicture",
+                                        "454",
+                                        "39",
+                                        "\"UI\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Enemy2HealthBar",
+                                        "473",
+                                        "51",
+                                        "\"UI\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ChangePlan"
+                                      },
+                                      "parameters": [
+                                        "Enemy2ProfilePicture",
+                                        "=",
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ChangePlan"
+                                      },
+                                      "parameters": [
+                                        "Enemy2HealthBar",
+                                        "=",
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "LinkedObjects::LinkObjects"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Enemy2HealthBar",
+                                        "Enemy2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "LinkedObjects::LinkObjects"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Enemy2ProfilePicture",
+                                        "Enemy2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "HealthBarIsCreatedForPlayer1",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "for each instances of enemy\nwe take into account the healthbar linked to the enemy\nand we check if the health bar of the enemy is not equal to enemy health variable\nand the healthbar is greater than 0 (no need to run this event if the enemy healht is 0)\nthen we change the enemy health bar value set to enemy health variable"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy2",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemy2",
+                                "TakingDamage",
+                                "True",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2HealthBar",
+                                "Enemy2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                "=",
+                                "Enemy2.Health",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                ">",
+                                "0",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                "=",
+                                "Enemy2.Health",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "this event work as this: if any enemy is taking damage, we show his healthbar, if he is not the one taking damage, then we hide his healthbar\nfor each instances of enemy\nwe take into account enemy healthbar and profile picture linked to enemy"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy2",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2HealthBar",
+                                "Enemy2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2ProfilePicture",
+                                "Enemy2",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "if this is the last attacked enemy (variable is true)\nand the healthbar is not visible\nthen we show both the enemy healthbar, and the profile picture"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemy2",
+                                    "ThisIsTheLastAttackedEnemy",
+                                    "True",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Visible"
+                                  },
+                                  "parameters": [
+                                    "Enemy2HealthBar"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Montre"
+                                  },
+                                  "parameters": [
+                                    "Enemy2HealthBar",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Montre"
+                                  },
+                                  "parameters": [
+                                    "Enemy2ProfilePicture",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "if this is not the last attacked enemy, then we hide that enemy healthbar and profile picture"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemy2",
+                                    "ThisIsTheLastAttackedEnemy",
+                                    "False",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Visible"
+                                  },
+                                  "parameters": [
+                                    "Enemy2HealthBar"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Cache"
+                                  },
+                                  "parameters": [
+                                    "Enemy2HealthBar"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Cache"
+                                  },
+                                  "parameters": [
+                                    "Enemy2ProfilePicture"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "2 players mode",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "same as above but for both players 1 and 2"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "_2PlayersModeActivated",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy2",
+                          "conditions": [],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanObjectVariable"
+                                  },
+                                  "parameters": [
+                                    "Enemy2",
+                                    "TakingDamage",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "TakingDamageFromPlayer1",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "HealthBarIsCreatedForPlayer1",
+                                            "",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "PickedInstancesCount"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "=",
+                                            "1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Create"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2ProfilePicture",
+                                            "454",
+                                            "39",
+                                            "\"UI\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Create"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2HealthBar",
+                                            "473",
+                                            "51",
+                                            "\"UI\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ChangePlan"
+                                          },
+                                          "parameters": [
+                                            "Enemy2ProfilePicture",
+                                            "=",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ChangePlan"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar",
+                                            "=",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "LinkedObjects::LinkObjects"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2HealthBar",
+                                            "Enemy2"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "LinkedObjects::LinkObjects"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2ProfilePicture",
+                                            "Enemy2"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "HealthBarIsCreatedForPlayer1",
+                                            "True",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BooleanObjectVariable"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "TakingDamageFromPlayer2",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "HealthBarIsCreatedForPlayer2",
+                                            "",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "PickedInstancesCount"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "=",
+                                            "1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Create"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2ProfilePicture",
+                                            "454",
+                                            "39",
+                                            "\"UI\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Create"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2HealthBar",
+                                            "473",
+                                            "51",
+                                            "\"UI\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ChangePlan"
+                                          },
+                                          "parameters": [
+                                            "Enemy2ProfilePicture",
+                                            "=",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ChangePlan"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar",
+                                            "=",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "LinkedObjects::LinkObjects"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2HealthBar",
+                                            "Enemy2"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "LinkedObjects::LinkObjects"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Enemy2ProfilePicture",
+                                            "Enemy2"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "HealthBarIsCreatedForPlayer2",
+                                            "True",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy2",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "Enemy2",
+                                "TakingDamage",
+                                "True",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2HealthBar",
+                                "Enemy2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                "=",
+                                "Enemy2.Health",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                ">",
+                                "0",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                "=",
+                                "Enemy2.Health",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Enemy2",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2HealthBar",
+                                "Enemy2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2ProfilePicture",
+                                "Enemy2",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "colorB": 228,
+                              "colorG": 176,
+                              "colorR": 74,
+                              "creationTime": 0,
+                              "name": "Enemy health under player 1",
+                              "source": "",
+                              "type": "BuiltinCommonInstructions::Group",
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "we added the X position condition in here, to be able to pick the healthbar created udner player 1 (without this conditions, the game will show/hide enemy health bar under player 2 and 1, which is wrong)"
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "PosX"
+                                      },
+                                      "parameters": [
+                                        "Enemy2ProfilePicture",
+                                        "=",
+                                        "454"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PosX"
+                                      },
+                                      "parameters": [
+                                        "Enemy2HealthBar",
+                                        "=",
+                                        "473"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "ThisIsTheLastAttackedEnemy",
+                                            "True",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "inverted": true,
+                                            "value": "Visible"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Montre"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Montre"
+                                          },
+                                          "parameters": [
+                                            "Enemy2ProfilePicture",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "ThisIsTheLastAttackedEnemy",
+                                            "False",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Visible"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Cache"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Cache"
+                                          },
+                                          "parameters": [
+                                            "Enemy2ProfilePicture"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "parameters": []
+                            },
+                            {
+                              "colorB": 228,
+                              "colorG": 176,
+                              "colorR": 74,
+                              "creationTime": 0,
+                              "name": "Enemy health under player 2",
+                              "source": "",
+                              "type": "BuiltinCommonInstructions::Group",
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "PosX"
+                                      },
+                                      "parameters": [
+                                        "Enemy2ProfilePicture",
+                                        "=",
+                                        "454"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PosX"
+                                      },
+                                      "parameters": [
+                                        "Enemy2HealthBar",
+                                        "=",
+                                        "473"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "ThisIsTheLastAttackedEnemy2",
+                                            "True",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "inverted": true,
+                                            "value": "Visible"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Montre"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Montre"
+                                          },
+                                          "parameters": [
+                                            "Enemy2ProfilePicture",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BooleanObjectVariable"
+                                          },
+                                          "parameters": [
+                                            "Enemy2",
+                                            "ThisIsTheLastAttackedEnemy2",
+                                            "False",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Visible"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Cache"
+                                          },
+                                          "parameters": [
+                                            "Enemy2HealthBar"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Cache"
+                                          },
+                                          "parameters": [
+                                            "Enemy2ProfilePicture"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "parameters": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
               "colorG": 100,
               "colorR": 74,
               "creationTime": 0,
@@ -68189,6 +69818,32 @@
                                 "False",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo",
+                                "inverted": false
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2ProfilePicture",
+                                "Enemy2",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo",
+                                "inverted": false
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2HealthBar",
+                                "Enemy2",
+                                ""
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "actions": [
@@ -68222,6 +69877,26 @@
                                 "True",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Enemy2ProfilePicture",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                ""
+                              ],
+                              "subInstructions": []
                             },
                             {
                               "type": {
@@ -68250,6 +69925,32 @@
                                 "True",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo",
+                                "inverted": false
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2ProfilePicture",
+                                "Enemy2",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo",
+                                "inverted": false
+                              },
+                              "parameters": [
+                                "",
+                                "Enemy2HealthBar",
+                                "Enemy2",
+                                ""
+                              ],
+                              "subInstructions": []
                             }
                           ],
                           "actions": [
@@ -68272,6 +69973,26 @@
                                 "True",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Enemy2ProfilePicture",
+                                ""
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Enemy2HealthBar",
+                                ""
+                              ],
+                              "subInstructions": []
                             },
                             {
                               "type": {
@@ -70610,6 +72331,35 @@
                                       ]
                                     }
                                   ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "NumberVariable"
+                                      },
+                                      "parameters": [
+                                        "PlayerIsAtStage",
+                                        "=",
+                                        "5"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "PathfindingBehavior::SetDestination"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "Pathfinding",
+                                        "",
+                                        "RandomFloatInRange(2530,3126)",
+                                        "RandomFloatInRange(219,290)"
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -70966,6 +72716,35 @@
                                         "",
                                         "RandomFloatInRange(1250,1846)",
                                         "RandomFloatInRange(156,290)"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "NumberVariable"
+                                      },
+                                      "parameters": [
+                                        "PlayerIsAtStage",
+                                        "=",
+                                        "5"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "PathfindingBehavior::SetDestination"
+                                      },
+                                      "parameters": [
+                                        "Enemy2",
+                                        "Pathfinding",
+                                        "",
+                                        "RandomFloatInRange(2530,3126)",
+                                        "RandomFloatInRange(219,290)"
                                       ]
                                     }
                                   ]
