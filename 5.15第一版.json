@@ -81298,7 +81298,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "if player is at stage 4 (final stage)\nand number if killed enemis are 22 (means the player has killed all enemies, and its victory now)\nthen we fade the main music volume to 0\nand we play victory sound\nand we set GameStarted variable to false (to disable all player actions and controls)\nand GameFinishedVictory to true"
+              "comment": "Stage 5 is the BOSS1 stage: clearing the normal enemies must not finish the level.\nOnly after BOSS1 is defeated do we fade the main music volume to 0, play the victory sound, set GameStarted to false, and set GameFinishedVictory to true."
             },
             {
               "folded": true,
@@ -81316,12 +81316,12 @@
                 },
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "NumberOfDeadEnemies",
-                    "=",
-                    "35"
+                    "BossDefeated",
+                    "True",
+                    ""
                   ]
                 },
                 {
